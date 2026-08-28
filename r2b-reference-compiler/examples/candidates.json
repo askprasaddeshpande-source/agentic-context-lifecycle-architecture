@@ -1,0 +1,40 @@
+[
+  {
+    "candidate_id": "C1",
+    "source_kind": "CURRENT_STATE",
+    "source_id": "SAP-META-1",
+    "content": {
+      "system": "TRL_EN",
+      "client": "100"
+    },
+    "estimated_tokens": 40,
+    "priority": "P0",
+    "scores": {
+      "relevance": 1,
+      "authority": 1,
+      "temporal": 1,
+      "validation": 1,
+      "utility": 1
+    },
+    "authority_class": "SAP_METADATA",
+    "validation_state": "AUTHORITATIVE",
+    "temporal": {
+      "state": "CURRENT"
+    },
+    "scope": {
+      "project_id": "CAPELLA",
+      "system": "TRL_EN",
+      "client": "100"
+    },
+    "subject": "sap_target",
+    "value": {
+      "system": "TRL_EN",
+      "client": "100"
+    },
+    "provenance": {
+      "source_type": "SAP_METADATA",
+      "source_id": "SAP-META-1"
+    },
+    "mandatory": true
+  }
+]

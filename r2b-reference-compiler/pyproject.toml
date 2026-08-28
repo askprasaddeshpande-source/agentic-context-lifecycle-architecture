@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ace-wsa-r2b"
+version = "0.1.1"
+description = "Standalone deterministic Context Compiler reference implementation for ACE-WSA R2B."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+ace-context = "ace_wsa_r2b.cli:main"
+ace-r2b-acceptance = "ace_wsa_r2b.acceptance:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

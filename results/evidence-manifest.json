@@ -1,0 +1,17 @@
+{
+  "schema_version": "ace-wsa-evidence-manifest.1",
+  "r2c": {
+    "observations_sha256": "75BCDB6386F6F296851C50529EE769A771F71B164EAEBC6587A92CBC8ED6C4F2",
+    "snapshot_sha256": "CBE66898D0C9FC7E36F0E06AB71046B10F755E1BFF8B5924E3AA52FDE161B3DE",
+    "compiled_context_hash": "sha256:ff8531e1290854ff8d94004ea73a6e12eb60238960ba0ceab2305629bc59d6ea",
+    "live_result_verified_against_local_evidence": true
+  },
+  "r2d": {
+    "A_prompt_sha256": "4482ECD67B28CFD693E49EA66578EBD0F2F1E420C1E44CDE0E9566126E3B5B58",
+    "B_prompt_sha256": "38F291404826CDCCABA60BFF02BCB1FC3F4834A1C51321670EB57BFC860BF664",
+    "final_result_verified_against_local_evidence": true,
+    "verdict": "VALIDATED",
+    "median_actual_model_input_reduction_pct": 26.7046
+  },
+  "source_paths_disclosed": false
+}

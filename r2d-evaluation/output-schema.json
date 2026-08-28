@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "experiment_id",
+    "project_checkpoint_blocker",
+    "factory_runtime_status",
+    "factory_runtime_reason_code",
+    "rap_readiness",
+    "bridge_reachable",
+    "sap_write_authority",
+    "checkpoint_next_action",
+    "safe_to_execute_checkpoint_next_action_now",
+    "current_availability_authority",
+    "prohibited_reinvestigation"
+  ],
+  "properties": {
+    "experiment_id": {
+      "type": "string"
+    },
+    "project_checkpoint_blocker": {
+      "type": "string"
+    },
+    "factory_runtime_status": {
+      "type": "string"
+    },
+    "factory_runtime_reason_code": {
+      "type": "string"
+    },
+    "rap_readiness": {
+      "type": "string"
+    },
+    "bridge_reachable": {
+      "type": "boolean"
+    },
+    "sap_write_authority": {
+      "type": "string"
+    },
+    "checkpoint_next_action": {
+      "type": "string"
+    },
+    "safe_to_execute_checkpoint_next_action_now": {
+      "type": "boolean"
+    },
+    "current_availability_authority": {
+      "type": "string",
+      "enum": [
+        "CURRENT_RUNTIME",
+        "HISTORICAL_PROOF",
+        "UNKNOWN"
+      ]
+    },
+    "prohibited_reinvestigation": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

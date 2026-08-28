@@ -1,0 +1,62 @@
+{
+  "WSA": {
+    "name": "Working-Set Amplification",
+    "formula": "raw_input / sufficient_input",
+    "status": "MEASURED"
+  },
+  "HCT": {
+    "name": "Historical Context Tax",
+    "formula": "historical_or_raw_input - sufficient_or_compiled_input",
+    "status": "MEASURED"
+  },
+  "FCR": {
+    "name": "Fresh Context Reduction",
+    "formula": "1 - sufficient_or_compiled_input / historical_or_raw_input",
+    "status": "MEASURED"
+  },
+  "CPC": {
+    "name": "Context Provenance Coverage",
+    "formula": "claims_with_known_provenance / compiled_claims",
+    "status": "STRUCTURALLY_VALIDATED"
+  },
+  "SCR": {
+    "name": "Stale Context Rate",
+    "formula": "superseded_or_invalid_context / injected_context",
+    "status": "STRUCTURALLY_VALIDATED_NOT_TOKEN_NORMALIZED"
+  },
+  "TDR": {
+    "name": "Tool Disclosure Ratio",
+    "formula": "tools_disclosed / tools_available",
+    "status": "QUALIFIED"
+  },
+  "CE": {
+    "name": "Context Efficiency",
+    "formula": "relevant_context / injected_context",
+    "status": "PROPOSED"
+  },
+  "CU": {
+    "name": "Context Utilization",
+    "formula": "compiled_context / available_window",
+    "status": "PROPOSED"
+  },
+  "CCR": {
+    "name": "Context Churn Rate",
+    "formula": "new_context / active_working_set",
+    "status": "PROPOSED"
+  },
+  "CRE": {
+    "name": "Context Reuse Efficiency",
+    "formula": "relevant_reused_context / total_reused_injected_context",
+    "status": "PROPOSED"
+  },
+  "CPVO": {
+    "name": "Cost per Validated Outcome",
+    "formula": "total_execution_cost / validated_outcomes",
+    "status": "PROPOSED"
+  },
+  "CES": {
+    "name": "Context Effectiveness Score",
+    "formula": "not frozen",
+    "status": "FUTURE_ONLY"
+  }
+}

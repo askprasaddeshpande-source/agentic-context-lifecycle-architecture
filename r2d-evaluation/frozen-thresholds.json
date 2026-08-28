@@ -1,0 +1,7 @@
+{
+  "minimum_replicates": 2,
+  "validated_context_reduction_threshold_pct": 20.0,
+  "quality_required": "12/12 in every A and B arm",
+  "tool_like_items_allowed": 0,
+  "fresh_execution_each_arm": true
+}

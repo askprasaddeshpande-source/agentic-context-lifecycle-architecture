@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MissionRequest",
+  "type": "object",
+  "required": [
+    "mission_id",
+    "intent",
+    "goal",
+    "execution",
+    "risk",
+    "validation"
+  ],
+  "properties": {
+    "mission_id": {
+      "type": "string"
+    },
+    "intent": {
+      "type": "string"
+    },
+    "goal": {
+      "type": "string"
+    },
+    "execution": {
+      "type": "object"
+    },
+    "risk": {
+      "type": "object"
+    },
+    "validation": {
+      "type": "object"
+    }
+  }
+}

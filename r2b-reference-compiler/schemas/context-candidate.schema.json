@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ContextCandidate",
+  "type": "object",
+  "required": [
+    "candidate_id",
+    "source_kind",
+    "source_id",
+    "content",
+    "estimated_tokens",
+    "provenance"
+  ],
+  "properties": {
+    "candidate_id": {
+      "type": "string"
+    },
+    "estimated_tokens": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "priority": {
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ]
+    }
+  }
+}

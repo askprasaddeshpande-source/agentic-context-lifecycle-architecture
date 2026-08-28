@@ -1,0 +1,35 @@
+{
+  "ACE_WSA_R2B_REFERENCE_IMPLEMENTATION": "PASS",
+  "acceptance": {
+    "HELIOS_HISTORY_FILTER_TEST": true,
+    "DETERMINISTIC_REPLAY": true,
+    "CONTEXT_HASH_STABLE": true,
+    "TEMPORAL_SUPERSESSION": true,
+    "AUTHORITY_PRECEDENCE": true,
+    "UNRESOLVED_CONFLICT_FAIL_CLOSED": true,
+    "MANDATORY_CONTEXT_PRESERVATION": true,
+    "HARD_BUDGET_ENFORCEMENT": true,
+    "DUPLICATE_ELIMINATION": true,
+    "TOOL_DISCLOSURE_FILTERING": true,
+    "SKILL_DISCLOSURE_FILTERING": true,
+    "CROSS_SCOPE_ISOLATION": true,
+    "REQUIRED_AUTHORITY_FAIL_CLOSED": true,
+    "MANDATORY_SCOPE_FAIL_CLOSED": true,
+    "UNKNOWN_MANDATORY_FAIL_CLOSED": true,
+    "PROVENANCE_COVERAGE": true,
+    "EXCLUSION_REASON_COVERAGE": true,
+    "SCHEMA_CONTRACTS": true,
+    "SHADOW_MODE_ZERO_EXECUTION_WRITES": true
+  },
+  "helios": {
+    "status": "COMPILED",
+    "available_candidate_tokens": 234740,
+    "compiled_tokens": 240,
+    "avoided_tokens": 234500,
+    "included_count": 10,
+    "excluded_count": 3500,
+    "tools": 0,
+    "skills": 0,
+    "context_hash": "sha256:db02503a89c873f776f16331c8c4705aae83421b3fa103e81f02b53ad1be3806"
+  }
+}

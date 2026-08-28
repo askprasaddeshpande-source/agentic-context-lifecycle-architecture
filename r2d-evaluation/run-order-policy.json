@@ -1,0 +1,10 @@
+{
+  "replicate_1": [
+    "A",
+    "B"
+  ],
+  "replicate_2": [
+    "B",
+    "A"
+  ]
+}

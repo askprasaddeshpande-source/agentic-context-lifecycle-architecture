@@ -1,0 +1,168 @@
+{
+  "schema_version": "ace-wsa-public-results.1",
+  "generated_at": "2026-08-28T08:36:28.518246+00:00",
+  "r2c": {
+    "stage": "R2C",
+    "evidence_class": "ORIGINAL_LIVE_RESULT_SUMMARY",
+    "status": "COMPILED",
+    "mission_id": "R2C-LIVE-001",
+    "baseline": {
+      "tokens": 16404,
+      "evidence_grade": "ESTIMATED_FROM_LIVE_ANALYSIS_CONTEXT_JSON"
+    },
+    "candidate_pool": {
+      "tokens": 9848,
+      "records": 57,
+      "tools_available": 3,
+      "skills_available": 0
+    },
+    "compiled": {
+      "tokens": 9406,
+      "candidate_tokens": 8806,
+      "capability_tokens": 600,
+      "avoided_tokens": 1042,
+      "context_hash": "sha256:ff8531e1290854ff8d94004ea73a6e12eb60238960ba0ceab2305629bc59d6ea",
+      "tools_selected": 3,
+      "skills_selected": 0,
+      "baseline_to_compiled_ratio": 1.744,
+      "context_reduction_pct_vs_baseline": 42.6603
+    },
+    "quality": {
+      "mandatory_facts_required": 6,
+      "mandatory_facts_preserved": 6,
+      "mandatory_fact_preservation_pct": 100.0,
+      "authority_required_count": 2,
+      "authority_present_count": 2,
+      "authority_coverage": 1.0,
+      "superseded_facts_injected": 0,
+      "provenance_coverage": 1.0,
+      "exclusion_reason_coverage": 1.0
+    },
+    "safety": {
+      "llm_calls": 0,
+      "sap_calls": 0,
+      "sap_writes": 0,
+      "repository_writes": 0
+    },
+    "cryptographic_evidence": {
+      "observations_sha256": "75BCDB6386F6F296851C50529EE769A771F71B164EAEBC6587A92CBC8ED6C4F2",
+      "snapshot_sha256": "CBE66898D0C9FC7E36F0E06AB71046B10F755E1BFF8B5924E3AA52FDE161B3DE",
+      "compiled_context_hash": "sha256:ff8531e1290854ff8d94004ea73a6e12eb60238960ba0ceab2305629bc59d6ea"
+    },
+    "claim_boundary": "R2C token counts are deterministic estimates, not provider-metered model input or cost savings."
+  },
+  "r2d": {
+    "stage": "R2D",
+    "evidence_class": "PROVIDER_REPORTED_CONTROLLED_AB",
+    "experiment_id": "R2D-CAPELLA-AB-001",
+    "verdict": "VALIDATED",
+    "required_replicates": 2,
+    "completed_pairs": 2,
+    "quality_preserved_all_pairs": true,
+    "safety_pass_all_pairs": true,
+    "actual_token_telemetry_complete": true,
+    "B_input_lower_every_pair": true,
+    "median_B_input_reduction_pct": 26.7046,
+    "validated_reduction_threshold_pct": 20.0,
+    "pairs": [
+      {
+        "replicate": 1,
+        "A": {
+          "input_tokens": 31218,
+          "cached_input_tokens": 1408,
+          "output_tokens": 360,
+          "reasoning_output_tokens": 221,
+          "total_tokens": 0,
+          "duration_ms": 15738,
+          "quality_score": 12,
+          "quality_max": 12,
+          "tool_like_items": 0
+        },
+        "B": {
+          "input_tokens": 22345,
+          "cached_input_tokens": 1408,
+          "output_tokens": 330,
+          "reasoning_output_tokens": 191,
+          "total_tokens": 0,
+          "duration_ms": 17002,
+          "quality_score": 12,
+          "quality_max": 12,
+          "tool_like_items": 0
+        },
+        "B_input_reduction_pct": 28.4227,
+        "quality_equal_and_perfect": true,
+        "safety_pass": true
+      },
+      {
+        "replicate": 2,
+        "A": {
+          "input_tokens": 29788,
+          "cached_input_tokens": 11648,
+          "output_tokens": 272,
+          "reasoning_output_tokens": 133,
+          "total_tokens": 0,
+          "duration_ms": 20380,
+          "quality_score": 12,
+          "quality_max": 12,
+          "tool_like_items": 0
+        },
+        "B": {
+          "input_tokens": 22345,
+          "cached_input_tokens": 1408,
+          "output_tokens": 458,
+          "reasoning_output_tokens": 319,
+          "total_tokens": 0,
+          "duration_ms": 22304,
+          "quality_score": 12,
+          "quality_max": 12,
+          "tool_like_items": 0
+        },
+        "B_input_reduction_pct": 24.9866,
+        "quality_equal_and_perfect": true,
+        "safety_pass": true
+      }
+    ],
+    "interpretation": "Compiled context preserved the deterministic outcome in all replicated arms and materially reduced actual model input.",
+    "prompt_hashes": {
+      "A_sha256": "4482ECD67B28CFD693E49EA66578EBD0F2F1E420C1E44CDE0E9566126E3B5B58",
+      "B_sha256": "38F291404826CDCCABA60BFF02BCB1FC3F4834A1C51321670EB57BFC860BF664"
+    },
+    "claim_boundary": "26.7046% is median actual model-input reduction for this bounded mission, not equivalent monetary-cost or latency reduction."
+  },
+  "metrics": {
+    "schema_version": "ace-wsa-metrics.1",
+    "experiment_id": "R2D-CAPELLA-AB-001",
+    "replicates": [
+      {
+        "replicate": 1,
+        "A_input_tokens": 31218,
+        "B_input_tokens": 22345,
+        "WSA": 1.397091,
+        "HCT_tokens": 8873,
+        "FCR_pct": 28.4227,
+        "A_quality": "12/12",
+        "B_quality": "12/12",
+        "safety_pass": true
+      },
+      {
+        "replicate": 2,
+        "A_input_tokens": 29788,
+        "B_input_tokens": 22345,
+        "WSA": 1.333095,
+        "HCT_tokens": 7443,
+        "FCR_pct": 24.9866,
+        "A_quality": "12/12",
+        "B_quality": "12/12",
+        "safety_pass": true
+      }
+    ],
+    "median_FCR_pct": 26.7046,
+    "validated_threshold_pct": 20.0,
+    "quality_preserved_all_pairs": true,
+    "safety_pass_all_pairs": true
+  },
+  "cross_runtime_problem_evidence": {
+    "status": "PAPER_REPORTED_NOT_RECONSTRUCTED_BY_THIS_R2A_R2D_ARTIFACT",
+    "note": "Cross-runtime raw evidence is outside the supplied R2A-R2D package; this artifact does not fabricate it."
+  }
+}

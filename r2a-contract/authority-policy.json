@@ -1,0 +1,65 @@
+{
+  "schema_version": "r2a-authority.1",
+  "note": "Reference policy; domain configurable. Lower rank is stronger authority.",
+  "precedence": [
+    {
+      "rank": 0,
+      "classes": [
+        "LIVE_ENTERPRISE_AUTHORITY",
+        "LIVE_ENTERPRISE_STATE",
+        "SAP_RUNTIME",
+        "SAP_METADATA"
+      ]
+    },
+    {
+      "rank": 1,
+      "classes": [
+        "VERIFIED_RUNTIME_RESULT",
+        "COMPILER_VALIDATED"
+      ]
+    },
+    {
+      "rank": 2,
+      "classes": [
+        "VALIDATED_ARTIFACT"
+      ]
+    },
+    {
+      "rank": 3,
+      "classes": [
+        "APPROVED_ARCHITECTURE_DECISION",
+        "CURRENT_POLICY"
+      ]
+    },
+    {
+      "rank": 4,
+      "classes": [
+        "VERIFIED_MEMORY"
+      ]
+    },
+    {
+      "rank": 5,
+      "classes": [
+        "CURRENT_USER_ASSERTION"
+      ]
+    },
+    {
+      "rank": 6,
+      "classes": [
+        "HISTORICAL_TOOL_OBSERVATION"
+      ]
+    },
+    {
+      "rank": 7,
+      "classes": [
+        "MODEL_GENERATED_MEMORY"
+      ]
+    },
+    {
+      "rank": 8,
+      "classes": [
+        "UNVERIFIED_TEXT"
+      ]
+    }
+  ]
+}

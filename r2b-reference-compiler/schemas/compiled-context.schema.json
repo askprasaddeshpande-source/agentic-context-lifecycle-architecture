@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CompiledContext",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "context_id",
+    "mission_id",
+    "compiler_version",
+    "mode",
+    "budget",
+    "mission",
+    "authoritative_state",
+    "relevant_memory",
+    "skills",
+    "tools",
+    "exclusions",
+    "provenance_manifest",
+    "context_hash"
+  ]
+}

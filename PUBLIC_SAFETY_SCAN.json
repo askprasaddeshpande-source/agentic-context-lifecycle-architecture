@@ -1,0 +1,20 @@
+{
+  "schema_version": "ace-wsa-public-safety.1",
+  "generated_at": "2026-08-28T17:50:50+00:00",
+  "scope": "HEURISTIC_PUBLICATION_SCAN_OF_GENERATED_ARTIFACT",
+  "secret_scan": {
+    "status": "PASS",
+    "hits": []
+  },
+  "private_path_scan": {
+    "status": "PASS",
+    "hits": []
+  },
+  "proprietary_content_scan": {
+    "status": "PASS",
+    "private_terms_source": "ACE_WSA_PRIVATE_TERMS environment variable",
+    "configured_terms": 4,
+    "hits": []
+  },
+  "warning": "PASS is a heuristic technical scan, not a legal/confidentiality determination."
+}

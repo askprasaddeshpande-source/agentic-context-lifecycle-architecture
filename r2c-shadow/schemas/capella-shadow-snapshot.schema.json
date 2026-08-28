@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ACE-WSA R2C Capella Shadow Snapshot",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "mission",
+    "current_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "r2c.1"
+    },
+    "source": {
+      "type": "string"
+    },
+    "baseline_context": {
+      "type": "object"
+    },
+    "mission": {
+      "type": "object"
+    },
+    "current_state": {
+      "type": "array"
+    },
+    "validated_decisions": {
+      "type": "array"
+    },
+    "historical_support": {
+      "type": "array"
+    },
+    "available_tools": {
+      "type": "array"
+    },
+    "available_skills": {
+      "type": "array"
+    }
+  }
+}

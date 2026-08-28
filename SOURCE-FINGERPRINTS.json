@@ -1,0 +1,49 @@
+{
+  "schema_version": "ace-wsa-source-fingerprints.1",
+  "source_paths_disclosed": false,
+  "hf02_source_gate": {
+    "OUTPUT_SCHEMA_NO_UNIQUEITEMS": true,
+    "MODEL_WIRE_FORMAT_STRIPS_ITEM_AUDIT": true,
+    "MODEL_CONTEXT_EXCLUDES_AUDIT_PLANE": true,
+    "R2D_TEST_B3_WIRE_FORMAT": true,
+    "UNIQUEITEMS_REMOVED": true
+  },
+  "fingerprints": {
+    "r2b_compiler": {
+      "sha256": "8BA4CE11E3EAD6F9CCF0FD8BE0C1B31F1F3EAAE19A8F9C7B416D0E9FE330953A",
+      "size_bytes": 8954
+    },
+    "r2b_models": {
+      "sha256": "F68D5D9B94A4F3A3540BF1774DC362B415818B1C2DD3B2E2A3D9256B4FBE01AA",
+      "size_bytes": 5546
+    },
+    "r2b_acceptance": {
+      "sha256": "82D4C6391917688CC3BDCCC20D951D0FEAE6425C0AF773FD06685835BB3A61C8",
+      "size_bytes": 5970
+    },
+    "r2c_builder": {
+      "sha256": "30670A9FBB68FD45DD077CED2ECA60845F8D779FC22559312C83D035F1DFAA12",
+      "size_bytes": 7054
+    },
+    "r2c_shadow": {
+      "sha256": "73EED377901600D54A81FBA6EA4263BDBBB62FB46DAB4C48D3119D06E2C6EDE8",
+      "size_bytes": 7975
+    },
+    "r2d_validator": {
+      "sha256": "10CF59809E70C15188277C2E1AE09677972A74B45E03511D6B07390FE301309A",
+      "size_bytes": 1563
+    },
+    "r2d_prepare": {
+      "sha256": "19104900CC1CB0D7E5BBE9783ACC0D6CD31781C2311626A9BEA1B4D34F0DE921",
+      "size_bytes": 12898
+    },
+    "r2d_acceptance": {
+      "sha256": "0C8C1522F542C5699DBA87C6A5BC42AB351BF654D634701458051064DC1A2CB7",
+      "size_bytes": 6170
+    },
+    "r2d_output_schema": {
+      "sha256": "E3309B4839F6CC1E0189C03D3AFBB001ABB969DF518734C0783718693E1D715A",
+      "size_bytes": 1449
+    }
+  }
+}

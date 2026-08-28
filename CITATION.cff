@@ -1,0 +1,12 @@
+
+cff-version: 1.2.0
+message: "Please cite the associated paper when using this artifact."
+title: "From Persistent Memory to Mission Working Sets: An Authority-Aware Context Lifecycle Architecture for Agentic AI"
+type: software
+authors:
+  - family-names: "Deshpande"
+    given-names: "Prasad"
+    orcid: "https://orcid.org/0009-0008-1344-6585"
+version: "1.0.0"
+date-released: "2026-08-28"
+repository-code: "https://github.com/askprasaddeshpande-source/agentic-context-lifecycle-architecture"

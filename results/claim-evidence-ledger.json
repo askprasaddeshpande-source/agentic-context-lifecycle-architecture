@@ -1,0 +1,25 @@
+{
+  "schema_version": "ace-wsa-claim-ledger.1",
+  "claims": [
+    {
+      "id": "C-R2C-1",
+      "classification": "VERIFIED_STRUCTURAL",
+      "claim": "R2C preserved mandatory facts and authority coverage with zero superseded-fact injection."
+    },
+    {
+      "id": "C-R2D-1",
+      "classification": "VERIFIED",
+      "claim": "R2D preserved 12/12 quality in every valid A/B arm."
+    },
+    {
+      "id": "C-R2D-2",
+      "classification": "DERIVED_FROM_VERIFIED_TELEMETRY",
+      "claim": "Median actual model-input reduction was 26.7046%."
+    },
+    {
+      "id": "C-ARCH-1",
+      "classification": "SUPPORTED_ARCHITECTURE_HYPOTHESIS",
+      "claim": "Persistent memory, audit/provenance evidence and model-active context should be separate planes."
+    }
+  ]
+}

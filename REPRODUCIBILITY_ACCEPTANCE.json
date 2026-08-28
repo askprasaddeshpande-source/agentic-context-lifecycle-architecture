@@ -1,0 +1,19 @@
+{
+  "schema_version": "ace-wsa-public-acceptance.1",
+  "status": "PASS",
+  "checks": {
+    "R2A_CONTRACT_PRESENT": true,
+    "R2B_REFERENCE_PRESENT": true,
+    "R2B_TESTS_PASS": true,
+    "R2C_SANITIZED_SHADOW_PASS": true,
+    "R2D_VALIDATOR_PASS": true,
+    "R2D_RESULTS_RECOMPUTED": true,
+    "METRIC_DERIVATION_PASS": true,
+    "PRIVATE_PATH_SCAN_PASS": true,
+    "SECRET_SCAN_PASS": true,
+    "PROPRIETARY_CONTENT_SCAN_PASS": true,
+    "NO_MODEL_CALLS": true,
+    "NO_SAP_CALLS": true,
+    "NO_SAP_WRITES": true
+  }
+}

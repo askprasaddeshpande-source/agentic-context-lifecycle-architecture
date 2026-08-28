@@ -1,0 +1,33 @@
+{
+  "mission_id": "MIS-EXAMPLE-001",
+  "intent": "ASSESS_CURRENT_STATE",
+  "goal": "Assess current authoritative state using only mission-relevant context.",
+  "environment": {
+    "project_id": "CAPELLA",
+    "system": "TRL_EN",
+    "client": "100"
+  },
+  "execution": {
+    "mode": "PREVIEW",
+    "write_allowed": false,
+    "network_allowed": false
+  },
+  "risk": {
+    "level": "HIGH"
+  },
+  "validation": {
+    "required": true,
+    "authorities": [
+      "SAP_METADATA"
+    ]
+  },
+  "budgets": {
+    "max_context_tokens": 8000,
+    "soft_limit": 6500,
+    "reserve_tokens": 1000
+  },
+  "constraints": [
+    "NO_WRITES"
+  ],
+  "requested_capabilities": []
+}

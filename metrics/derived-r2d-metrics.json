@@ -1,0 +1,32 @@
+{
+  "schema_version": "ace-wsa-metrics.1",
+  "experiment_id": "R2D-CAPELLA-AB-001",
+  "replicates": [
+    {
+      "replicate": 1,
+      "A_input_tokens": 31218,
+      "B_input_tokens": 22345,
+      "WSA": 1.397091,
+      "HCT_tokens": 8873,
+      "FCR_pct": 28.4227,
+      "A_quality": "12/12",
+      "B_quality": "12/12",
+      "safety_pass": true
+    },
+    {
+      "replicate": 2,
+      "A_input_tokens": 29788,
+      "B_input_tokens": 22345,
+      "WSA": 1.333095,
+      "HCT_tokens": 7443,
+      "FCR_pct": 24.9866,
+      "A_quality": "12/12",
+      "B_quality": "12/12",
+      "safety_pass": true
+    }
+  ],
+  "median_FCR_pct": 26.7046,
+  "validated_threshold_pct": 20.0,
+  "quality_preserved_all_pairs": true,
+  "safety_pass_all_pairs": true
+}

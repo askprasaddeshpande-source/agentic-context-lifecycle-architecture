@@ -1,0 +1,79 @@
+{
+  "schema_version": "r2a-invariants.1",
+  "stage": "R2A",
+  "invariants": [
+    {
+      "id": "I1",
+      "text": "Memory != context."
+    },
+    {
+      "id": "I2",
+      "text": "Session identity != working-set identity."
+    },
+    {
+      "id": "I3",
+      "text": "Retrieval != authority."
+    },
+    {
+      "id": "I4",
+      "text": "Current authority outranks historical memory for present state."
+    },
+    {
+      "id": "I5",
+      "text": "Superseded facts are excluded by default."
+    },
+    {
+      "id": "I6",
+      "text": "Mandatory context cannot be dropped for token savings."
+    },
+    {
+      "id": "I7",
+      "text": "Tool disclosure is context."
+    },
+    {
+      "id": "I8",
+      "text": "Skill disclosure is context."
+    },
+    {
+      "id": "I9",
+      "text": "Cache optimization occurs after context selection."
+    },
+    {
+      "id": "I10",
+      "text": "Raw evidence is preserved."
+    },
+    {
+      "id": "I11",
+      "text": "Context eviction != data deletion."
+    },
+    {
+      "id": "I12",
+      "text": "Every included fact has provenance."
+    },
+    {
+      "id": "I13",
+      "text": "Every excluded candidate has a reason."
+    },
+    {
+      "id": "I14",
+      "text": "Unknown != inferred."
+    },
+    {
+      "id": "I15",
+      "text": "Conflict != silently merged."
+    },
+    {
+      "id": "I16",
+      "text": "Validation defines durable success."
+    },
+    {
+      "id": "I17",
+      "text": "Shadow mode performs zero execution-side writes."
+    }
+  ],
+  "post_r2d_extension": {
+    "id": "I18_POST_R2D",
+    "text": "Auditability must not automatically become model input: the compiler must maintain separate audit/provenance and model-active wire planes.",
+    "origin": "R2D harness finding; not retroactively claimed as original R2A"
+  }
+}

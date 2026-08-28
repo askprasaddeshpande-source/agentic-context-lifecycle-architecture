@@ -1,0 +1,189 @@
+{
+  "schema_version": "r2c-public.1",
+  "source": "SANITIZED_SYNTHETIC_ENTERPRISE_AUTHORITY_FIXTURE",
+  "baseline_context": {
+    "tokens": 14000,
+    "evidence_grade": "SYNTHETIC_FIXTURE_BASELINE",
+    "source": "public sanitized fixture"
+  },
+  "mission": {
+    "mission_id": "MIS-PUBLIC-R2C-AUTHORITY-001",
+    "intent": "ASSESS_CURRENT_RUNTIME_READINESS",
+    "goal": "Determine present execution readiness without reopening historically proven architecture.",
+    "environment": {
+      "project_id": "ENTERPRISE_DEMO",
+      "system": "DEMO",
+      "client": "000"
+    },
+    "execution": {
+      "mode": "PREVIEW",
+      "write_allowed": false,
+      "network_allowed": false
+    },
+    "risk": {
+      "level": "HIGH",
+      "complexity": "MEDIUM",
+      "uncertainty": "MEDIUM"
+    },
+    "validation": {
+      "required": true,
+      "authorities": [
+        "LIVE_ENTERPRISE_STATE"
+      ]
+    },
+    "budget": {
+      "hard_limit": 12000,
+      "soft_limit": 10000,
+      "reserve": 1000
+    },
+    "constraints": [
+      "NO_WRITE",
+      "CURRENT_RUNTIME_CONTROLS_PRESENT_AVAILABILITY",
+      "DO_NOT_REDESIGN_HISTORICALLY_PROVEN_PATH"
+    ],
+    "requested_capabilities": [
+      "READ_RUNTIME_STATUS"
+    ]
+  },
+  "current_state": [
+    {
+      "id": "LIVE-RUNTIME-STATUS",
+      "content": {
+        "factory_runtime_status": "BLOCKED"
+      },
+      "subject": "factory_runtime_status",
+      "value": "BLOCKED",
+      "authority_class": "LIVE_ENTERPRISE_STATE",
+      "provenance": {
+        "source_type": "LIVE_ENTERPRISE_STATE",
+        "source_id": "runtime-status"
+      },
+      "estimated_tokens": 30
+    },
+    {
+      "id": "LIVE-RUNTIME-REASON",
+      "content": {
+        "factory_runtime_reason": "DEPENDENCY_CONNECTION_FAILED"
+      },
+      "subject": "factory_runtime_reason",
+      "value": "DEPENDENCY_CONNECTION_FAILED",
+      "authority_class": "LIVE_ENTERPRISE_STATE",
+      "provenance": {
+        "source_type": "LIVE_ENTERPRISE_STATE",
+        "source_id": "runtime-reason"
+      },
+      "estimated_tokens": 35
+    },
+    {
+      "id": "LIVE-BRIDGE",
+      "content": {
+        "bridge_reachable": false
+      },
+      "subject": "bridge_reachable",
+      "value": false,
+      "authority_class": "LIVE_ENTERPRISE_STATE",
+      "provenance": {
+        "source_type": "LIVE_ENTERPRISE_STATE",
+        "source_id": "bridge-live"
+      },
+      "estimated_tokens": 25
+    },
+    {
+      "id": "LIVE-WRITE",
+      "content": {
+        "write_authority": "NONE"
+      },
+      "subject": "write_authority",
+      "value": "NONE",
+      "authority_class": "CURRENT_POLICY",
+      "provenance": {
+        "source_type": "CURRENT_POLICY",
+        "source_id": "write-policy"
+      },
+      "estimated_tokens": 25
+    }
+  ],
+  "validated_decisions": [
+    {
+      "id": "DEC-PROVEN-PATH",
+      "content": {
+        "execution_path": "PROVEN"
+      },
+      "subject": "historical_execution_path",
+      "value": "PROVEN",
+      "authority_class": "VALIDATED_ARTIFACT",
+      "provenance": {
+        "source_type": "VALIDATED_ARTIFACT",
+        "source_id": "proven-path"
+      },
+      "estimated_tokens": 45,
+      "relevance": 0.95
+    },
+    {
+      "id": "DEC-NO-REDESIGN",
+      "content": {
+        "prohibited_reinvestigation": "BACKEND_EXECUTION_REDESIGN"
+      },
+      "subject": "prohibited_reinvestigation_backend",
+      "value": "BACKEND_EXECUTION_REDESIGN",
+      "authority_class": "APPROVED_ARCHITECTURE_DECISION",
+      "provenance": {
+        "source_type": "APPROVED_ARCHITECTURE_DECISION",
+        "source_id": "no-redesign"
+      },
+      "estimated_tokens": 40,
+      "relevance": 0.98
+    }
+  ],
+  "historical_support": [
+    {
+      "id": "HIST-BRIDGE-PROVEN",
+      "content": {
+        "bridge_reachable": true,
+        "observation": "historically proven"
+      },
+      "subject": "bridge_reachable",
+      "value": true,
+      "temporal_state": "HISTORICAL",
+      "authority_class": "HISTORICAL_TOOL_OBSERVATION",
+      "provenance": {
+        "source_type": "HISTORICAL_TOOL_OBSERVATION",
+        "source_id": "bridge-history"
+      },
+      "estimated_tokens": 45,
+      "relevance": 0.92
+    },
+    {
+      "id": "HIST-UNRELATED-LOG",
+      "content": {
+        "summary": "large unrelated historical diagnostic record"
+      },
+      "temporal_state": "HISTORICAL",
+      "priority": "P5",
+      "authority_class": "HISTORICAL_TOOL_OBSERVATION",
+      "provenance": {
+        "source_type": "HISTORICAL_TOOL_OBSERVATION",
+        "source_id": "unrelated-history"
+      },
+      "estimated_tokens": 9000,
+      "relevance": 0.01,
+      "utility": 0.01
+    }
+  ],
+  "available_tools": [
+    {
+      "tool_id": "READ_RUNTIME_STATUS",
+      "capability": "READ_RUNTIME_STATUS",
+      "mode": "READ_ONLY",
+      "estimated_schema_tokens": 150
+    },
+    {
+      "tool_id": "WRITE_RUNTIME",
+      "capability": "WRITE_RUNTIME",
+      "mode": "WRITE",
+      "requires_authorization": true,
+      "estimated_schema_tokens": 200
+    }
+  ],
+  "available_skills": []
+}
