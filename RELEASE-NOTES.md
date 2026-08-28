@@ -32,3 +32,10 @@ The package excludes private enterprise observations, credentials, private
 repositories, workstation-specific paths and generated Python cache artifacts.
 The private R2C source snapshot and exact historical provider execution
 environment are not publicly replayable.
+
+## License
+
+- Software / executable code: **MIT**
+- Non-code research material: **CC BY 4.0**
+
+See `LICENSE-NOTICE.md` for scope and precedence.

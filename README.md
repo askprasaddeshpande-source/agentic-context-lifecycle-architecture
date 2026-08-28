@@ -26,3 +26,12 @@ provider execution environment.
 
 Observed model-input reduction is not a claim of monetary cost reduction,
 compute reduction, or latency improvement.
+
+## License
+
+This artifact uses a dual-license model:
+
+- **Software / executable code:** MIT (`LICENSE-CODE-MIT.txt`)
+- **Non-code research material:** Creative Commons Attribution 4.0 International (`LICENSE-RESEARCH-CC-BY-4.0.md`)
+
+See `LICENSE-NOTICE.md` for the scope and precedence rules.

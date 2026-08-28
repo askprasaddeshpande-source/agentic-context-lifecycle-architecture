@@ -2,7 +2,7 @@
   "schema_version": "ace-wsa-public-artifact-final.1",
   "artifact": "ACE-WSA-PUBLIC-REPRODUCIBILITY",
   "version": "1.0.0",
-  "generated_at": "2026-08-28T17:50:50+00:00",
+  "generated_at": "2026-08-28T17:57:17+00:00",
   "scientific_results_changed": false,
   "network_calls_during_artifact_validation": 0,
   "model_calls": 0,
@@ -56,9 +56,19 @@
       "sha256": "B7DB4961E40D4921F7510172F8BAC7962C26FB240A9F81BD8EBC90D3A4D23934"
     },
     {
+      "path": "LICENSE-CODE-MIT.txt",
+      "size_bytes": 1094,
+      "sha256": "0D2E1CE2FA7279444804624E1D8BBFC8102C7BC3362DBCFFEE723AAA8202143C"
+    },
+    {
       "path": "LICENSE-NOTICE.md",
-      "size_bytes": 135,
-      "sha256": "308F6A44DB8F60BD07AB89D0B3868511E89351B63EE5D19CAEAB1FC7F0CE7CAD"
+      "size_bytes": 1441,
+      "sha256": "FCE97FB398E605E37000EB233C2C97E260E962B63E74318A1E30F3EC6ED4FD76"
+    },
+    {
+      "path": "LICENSE-RESEARCH-CC-BY-4.0.md",
+      "size_bytes": 740,
+      "sha256": "41D619FD53DFC569EE9F2CEB7B592DFDB4005AF319B04FF3A3D97F67EBA7E73E"
     },
     {
       "path": "metrics/definitions.json",
@@ -88,7 +98,7 @@
     {
       "path": "PUBLIC_SAFETY_SCAN.json",
       "size_bytes": 578,
-      "sha256": "F1124F4A33106235412B1F03E1902D3319680C57EBDC8165DDE025B55E00549D"
+      "sha256": "465BE31F5700840F3794ED6D5B703BCEC978A1ACE6B737D8ABCB9FE151E2E1D9"
     },
     {
       "path": "r2a-contract/authority-policy.json",
@@ -317,13 +327,13 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 1569,
-      "sha256": "F34CED073C88D23DA2493C97602E4A0259B96A1A2A2413C3EE3876145100558A"
+      "size_bytes": 1872,
+      "sha256": "58F61F206431B3D13796F16C1A711171CAA2D0F56876CC0DB3BA3373A4527BAB"
     },
     {
       "path": "RELEASE-NOTES.md",
-      "size_bytes": 1498,
-      "sha256": "CC81C6BD9D64565B656B0910789DC1FFD78D5FDECC540F49C1C5E00441DCA3B8"
+      "size_bytes": 1651,
+      "sha256": "16D3B8DA81473498D39DBC1C5A63B3BBD8FDB71FFB7F23D8133EF143C6B79D65"
     },
     {
       "path": "REPRODUCIBILITY.md",
