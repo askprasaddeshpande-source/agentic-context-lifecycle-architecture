@@ -1,0 +1,71 @@
+{
+  "schema_version": "post-review-evidence-r1.1",
+  "classification": "POST_REVIEW_MAJOR_REVISION_EVIDENCE",
+  "r2a_r2d_changed": false,
+  "historical_r2d": {
+    "replicate_1_provider_input_reduction_pct": 28.4227,
+    "replicate_2_provider_input_reduction_pct": 24.9866,
+    "descriptive_midpoint_median_pct": 26.7046,
+    "population_effect_estimate": false
+  },
+  "r2e_a": {
+    "status": "PASS",
+    "classification": "STRUCTURAL_DECONFOUNDING",
+    "a_utf8_bytes": 4650,
+    "b_utf8_bytes": 3417,
+    "c_utf8_bytes": 2701,
+    "serialization_reduction_pct": 26.5161,
+    "admission_reduction_pct": 20.9541,
+    "combined_structural_reduction_pct": 41.914,
+    "provider_metered_r2d_decomposition": false,
+    "result_sha256": "E2EADAE26528A7C4AA7B07D3585489B1E75F8E89DA1D041D96651DC646A67341"
+  },
+  "r2e_b": {
+    "status": "SCIENTIFIC_FAIL_PRESERVED",
+    "classification": "QUALIFIED_HELD_OUT_RESULT",
+    "independence_level": "CONTRACT_DERIVED_FROZEN_VALIDATOR",
+    "independent_human_validation": false,
+    "model_authored_validation": false,
+    "validator_frozen_before_execution": true,
+    "compiler_modified_before_test": false,
+    "case_count": 4,
+    "predicate_count": 29,
+    "pass_count": 28,
+    "fail_count": 1,
+    "pass_rate_pct": 96.5517,
+    "failed_predicate": {
+      "case_id": "H1_SUCCESS",
+      "name": "required_exclusion:SEAL-DUP:DUPLICATE",
+      "expected": "DUPLICATE",
+      "actual": "AUTHORITY_OVERRIDDEN",
+      "interpretation": "Equivalent record excluded at authority-resolution stage rather than later deduplication stage."
+    },
+    "post_hoc_repair": false,
+    "rerun_same_suite": false,
+    "corrective_replay_disclosed": true,
+    "scientific_inputs_changed": false,
+    "expected_outcomes_changed": false,
+    "compiler_changed": false,
+    "result_sha256": "702BD219C51D42FFC222B3080CFB80BA7ECC6730254850A76207549C0ACAD356",
+    "evidence_manifest_sha256": "D2C7468340849D9C9F2DEC6DF65281B363A70B366D8222719014C8BF302B07B9",
+    "suite_sha256": "6A0D8E06CE498000FEA538BE94B0DFAE7057AFAA87D1643880BF98630AF2249A",
+    "protocol_sha256": "3A95EB331440803F24E192BFC853AD7A6D2C2B8477A06F09C5CBFD467B95AFA4",
+    "hf01_corrective_replay_protocol_sha256": "BC48E8371A6D545766596C39A190CC6D04DEA4831EAC213379F78E13BADB42DE"
+  },
+  "r2e_c": {
+    "status": "PASS_WITH_I4_FALSIFICATION_VULNERABILITY_CONFIRMED",
+    "false_live_case": "F1_STATUS=COMPILED",
+    "equal_rank_control": "C1_STATUS=BLOCKED_CONFLICT",
+    "claim_boundary": "Deterministic precedence is not a factual-correctness guarantee when the highest-ranked source is itself wrong.",
+    "result_sha256": "938928FDD401017571932FCEB8BE0FDA901AC06D4D37B676AE6A875DBB95EBAF"
+  },
+  "aggregate_offline_evidence_sha256": "6990CD90688BAF39F97D8820C34FDC3D2BC26CD5FFB2C5D98DDD2EAFF8E13DEF",
+  "historical_public_release": {
+    "version": "v1.0.0",
+    "commit": "00a5fb654ebd98b05de587a87f6a67cc0846643a",
+    "zenodo_version_doi": "10.5281/zenodo.22149310",
+    "zenodo_concept_doi": "10.5281/zenodo.22149309",
+    "release_asset_sha256": "E8F16EE16A933DD664ADF796F942ADE69D596CA1B8B1D9AF27E49306625B44EA",
+    "immutable": true
+  }
+}

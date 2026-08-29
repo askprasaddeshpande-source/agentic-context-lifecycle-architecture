@@ -1,37 +1,16 @@
+# ACE-WSA Public Reproducibility Artifact - Post-Review Candidate
 
-# ACE-WSA Public Reproducibility Artifact R1
+`v1.0.0` is immutable historical R2A-R2D evidence at commit
+`00a5fb654ebd98b05de587a87f6a67cc0846643a` and Zenodo `10.5281/zenodo.22149310`.
 
-Supports the paper **From Persistent Memory to Mission Working Sets: An Authority-Aware Context Lifecycle Architecture for Agentic AI**.
+This is a v1.1.0 candidate.
 
-Offline acceptance requires no SAP, Capella, proprietary repository, paid model, or network access.
+Post-review evidence:
+- R2E-A: 26.5161% serialization, 20.9541% further admission, 41.9140% combined structural difference.
+- R2E-B: 28/29 frozen predicates; `DUPLICATE` expected vs `AUTHORITY_OVERRIDDEN` actual; no repair.
+- R2E-C: false-live vulnerability confirmed; equal-rank conflict still fails closed.
 
-Primary bounded result: across two controlled R2D replicate pairs of the tested enterprise-agent mission, provider-reported model input fell by 28.4227% and 24.9866%, respectively, while all four raw and compiled executions preserved the full 12/12 deterministic outcome contract. The descriptive midpoint/median of the two observed reductions is 26.7046%; it is not a population effect estimate.
+Code hardening adds `AUTHORITY_RELIABILITY_ADJUDICATION_REQUIRED` without silently promoting weaker authority.
 
-This artifact does not claim universal 26.7046% reduction, equivalent cost savings, latency reduction, first-ever context lifecycle architecture, or transformer modification.
-
-Run: `python acceptance.py`
-
-## Public reproducibility boundary
-
-**Fully/offline reproducible:** R2A invariants, R2B deterministic compiler,
-sanitized authority-conflict fixtures, deterministic validator logic, and
-metric derivation.
-
-**Methodologically reproducible:** the R2D protocol can be repeated on
-independently constructed bounded missions using the documented controls.
-
-**Not exactly publicly replayable:** the private enterprise R2C source
-snapshot, exact private raw/compiled R2D treatment content, and the historical
-provider execution environment.
-
-Observed model-input reduction is not a claim of monetary cost reduction,
-compute reduction, or latency improvement.
-
-## License
-
-This artifact uses a dual-license model:
-
-- **Software / executable code:** MIT (`LICENSE-CODE-MIT.txt`)
-- **Non-code research material:** Creative Commons Attribution 4.0 International (`LICENSE-RESEARCH-CC-BY-4.0.md`)
-
-See `LICENSE-NOTICE.md` for the scope and precedence rules.
+The v1 mechanism is admission control + a priori working-set estimation, not demand paging.
+WSA is conditional: Payload-WSA vs Provider/Wire-WSA.

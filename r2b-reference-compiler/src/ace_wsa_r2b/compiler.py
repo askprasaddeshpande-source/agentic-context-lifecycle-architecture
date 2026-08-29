@@ -4,6 +4,7 @@ from .models import *
 from .scope import ScopePolicy
 from .temporal import TemporalResolver
 from .authority import AuthorityResolver
+from .reliability import AuthorityReliabilityGuard
 from .dedupe import Deduplicator
 from .budget import BudgetController
 from .capabilities import CapabilitySelector
@@ -11,9 +12,10 @@ from .canonical import stable_hash
 from .telemetry import Telemetry
 
 class ContextCompiler:
-    VERSION="r2b.1"
+    VERSION="r2b.2-postreview"
     def __init__(self):
         self.scope=ScopePolicy();self.temporal=TemporalResolver();self.authority=AuthorityResolver()
+        self.reliability=AuthorityReliabilityGuard()
         self.dedupe=Deduplicator();self.budget=BudgetController();self.capabilities=CapabilitySelector()
 
     def compile(self,mission,candidates,tools=(),skills=(),*,mode="SHADOW",mission_time=None):
@@ -68,6 +70,10 @@ class ContextCompiler:
         if unknown:
             return CompileResult(CompileStatus.BLOCKED_CURRENT_STATE,None,
                 [{"type":"UNKNOWN_MANDATORY_TEMPORAL_STATE","candidate_ids":sorted(unknown)}],tel.events)
+
+        reliability_blocks=self.reliability.evaluate(eligible)
+        if reliability_blocks:
+            return CompileResult(CompileStatus.BLOCKED_CURRENT_STATE,None,reliability_blocks,tel.events)
 
         ar=self.authority.resolve(eligible)
         if ar.conflicts:
